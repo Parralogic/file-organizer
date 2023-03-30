@@ -1,12 +1,18 @@
 #!/bin/bash
 #Creator: David Parra-Sandoval
 #Date: 03/29/2023
-#Last Modified: 03/29/2023
+#Last Modified: 03/30/2023
 clear
 
 until [[ $YESNO = [yY]* ]]; do
 echo "Place this script in the root-directory or inside a folder to make the layout."
+echo -e "\e[92m"
+pwd
+echo -e "\e[00m"
 read -p "Is this the correct root-directory or the right folder for the layout?[y/n]: " YESNO
+if [[ $YESNO = [nN]* ]]; then
+exit 1
+fi
 clear
 done
 for MONTHS in January February March April May June July August September October November December; do
@@ -29,8 +35,9 @@ February) echo $MONTHS
           sleep  2
           mkdir $MONTHS
           cd $MONTHS
-          echo "Is it a common year28days or leap year29days for February?"
+          echo -e "\e[31mIs it a common year28days or leap year29days for February?"
           read -p "How many days: " DAYS
+          echo -en "\e[00m"
           if [[ $DAYS = 28 ]]; then
           #mkdir {1..28}
           for DAYS in {1..28}; do
@@ -196,5 +203,4 @@ December) echo $MONTHS
 esac
 done
 echo "Great! layout created."
-echo "Now you can just run the file-organizer script"
-
+echo "Now you can just run/execute the file-organizer.sh script"
