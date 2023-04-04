@@ -1,7 +1,7 @@
 #!/bin/bash
 #Creator: David Parra-Sandoval
 #Date: 03/29/2023
-#Last Modified: 03/30/2023
+#Last Modified: 04/04/2023
 clear
 
 until [[ $YESNO = [yY]* ]]; do
@@ -15,6 +15,7 @@ exit 1
 fi
 clear
 done
+pwd > INFO
 for MONTHS in January February March April May June July August September October November December; do
 case $MONTHS in
 January) echo $MONTHS
@@ -202,5 +203,5 @@ December) echo $MONTHS
           ;;
 esac
 done
-echo "Great! layout created."
+echo -e "Great! layout created. Copy the created \e[92mINFO\e[00m file to the directory where the file-organizer.sh script is located."
 echo "Now you can just run/execute the file-organizer.sh script"

@@ -1,6 +1,12 @@
 This is a simple script/s that will organize your files
 in a calendar and date layout; good for the office to organize your shit. still working on it.... as of 03/29/2023.
 
+UPDATE! 04/04/2023
+Made a little change in the layout.sh script. It will create an INFO file of the directory
+where you executed/run the layout.sh script. Now, need to work on the file-organize.sh script.
+And yes Im taking my time; Not like the bouncer2.4_5GHz|THEone.
+
+
 UPDATE! 03/30/2023
 Run/execute the layout.sh script in the root-directory/folder it will create the folders of the Months
 and within the Months will create the subfolders for the Days. That way you can easily find the files based
