@@ -14,7 +14,7 @@ mkdir $BACKUPLOCATION/$MONTH/$DAY/PDF &> /dev/null  ### liking. You can add more
 mkdir $BACKUPLOCATION/$MONTH/$DAY/ZIP &> /dev/null  ### or delete!
 mkdir $BACKUPLOCATION/$MONTH/$DAY/JPEG &> /dev/null ### If you add more directories you need to change the bottom too! Follow the pattern.
                                                     ### "*" is a wildcard; in this script it means whatever is in this directory do this..
-                                                    ### for loop takes every file one by one and puts it in a variable named FILES and a case statement;multiple ##  different choices of files, do this.
+                                                    ### for loop takes every file one by one and puts it in a variable named FILES and a case statement;multiple different choices of files, do this.
 
 
 for FILES in *; do
