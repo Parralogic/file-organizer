@@ -12,6 +12,8 @@ you can name a folder with the extension of .zip so FOLDER.zip and will move the
 directory, there is otherways too, but again you need to modify the file-organizer.sh script in the case statement.
 *.zip "*" to simply onderstand; means who gives a fuck of the name im looking for the extension of zip
 Then you can setup a cron job to execute the file-organizer.sh script.
+IF you dont modify or change the case statement, directories with files in them
+they will not me moved!
 
 
 UPDATE! 04/04/2023
