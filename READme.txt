@@ -7,6 +7,11 @@ to their liking. So for this script/s to work; first run/execute the layout.sh s
 then place the file-organizer.sh and INFO file in the SINGLE directory where all your files are stored [don't store files in a directory within the directory that your organizing],
 so they can be organized. YES place all the files in a SINGLE directory/folder; they will be organized to the Month and Day
 based on the layout INFO file.
+TIP: You can backup directories within the folder that you have the files that need to be organized,
+you can name a folder with the extension of .zip so FOLDER.zip and will move the entire folder to the ZIP
+directory, there is otherways too, but again you need to modify the file-organizer.sh script in the case statement.
+*.zip "*" to simply onderstand; means who gives a fuck of the name im looking for the extension of zip
+Then you can setup a cron job to execute the file-organizer.sh script.
 
 
 UPDATE! 04/04/2023
