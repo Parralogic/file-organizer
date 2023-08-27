@@ -1,9 +1,9 @@
 #!/bin/bash
 #Creator: David Parra-Sandoval
 #Date: 06/16/2023
-#Last Modified: 06/16/2023
+#Last Modified: 08/27/2023
 clear
-
+IFS=$'\n'
 MONTH=$(date +%B)                  ### DON'T touch/Modify
 DAY=$(date +%d)                    ### DON'T touch/Modify
 BACKUPLOCATION=$(cat INFO)         ### DON'T touch/Modify
