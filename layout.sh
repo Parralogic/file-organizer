@@ -22,7 +22,7 @@ January) echo $MONTHS
          sleep 2
          mkdir $MONTHS
          cd $MONTHS
-         #mkdir {1..31}
+         #mkdir {01..31}
          for DAYS in {01..31}; do
          echo -n $DAYS/
          mkdir $DAYS
@@ -40,7 +40,7 @@ February) echo $MONTHS
           read -p "How many days: " DAYS
           echo -en "\e[00m"
           if [[ $DAYS = 28 ]]; then
-          #mkdir {1..28}
+          #mkdir {01..28}
           for DAYS in {01..28}; do
           echo -n $DAYS/
           mkdir $DAYS
@@ -49,7 +49,7 @@ February) echo $MONTHS
           echo
           cd $OLDPWD
           elif [[ $DAYS = 29 ]]; then
-          #mkdir {1..29}
+          #mkdir {01..29}
           for DAYS in {01..29}; do
           echo -n $DAYS/
           mkdir $DAYS
@@ -65,7 +65,7 @@ March) echo $MONTHS
        sleep 2
        mkdir $MONTHS
        cd $MONTHS
-       #mkdir {1..31}
+       #mkdir {01..31}
        for DAYS in {01..31}; do
        echo -n $DAYS/
        mkdir $DAYS
@@ -79,7 +79,7 @@ April) echo $MONTHS
        sleep 2
        mkdir $MONTHS
        cd $MONTHS
-       #mkdir {1..30}
+       #mkdir {01..30}
        for DAYS in {01..30}; do
        echo -n $DAYS/
        mkdir $DAYS
@@ -93,7 +93,7 @@ May) echo $MONTHS
      sleep 2
      mkdir $MONTHS
      cd $MONTHS
-     #mkdir {1..31}
+     #mkdir {01..31}
      for DAYS in {01..31}; do
      echo -n $DAYS/
      mkdir $DAYS
@@ -107,7 +107,7 @@ June) echo $MONTHS
       sleep 2
       mkdir $MONTHS
       cd $MONTHS
-      #mkdir {1..30}
+      #mkdir {01..30}
       for DAYS in {01..30}; do
       echo -n $DAYS/
       mkdir $DAYS
@@ -121,7 +121,7 @@ July) echo $MONTHS
       sleep 2
       mkdir $MONTHS
       cd $MONTHS
-      #mkdir {1..31}
+      #mkdir {01..31}
       for DAYS in {01..31}; do
       echo -n $DAYS/
       mkdir $DAYS
@@ -135,7 +135,7 @@ August) echo $MONTHS
         sleep 2
         mkdir $MONTHS
         cd $MONTHS
-        #mkdir {1..31}
+        #mkdir {01..31}
         for DAYS in {01..31}; do
         echo -n $DAYS/
         mkdir $DAYS
@@ -149,7 +149,7 @@ September) echo $MONTHS
            sleep 2
            mkdir $MONTHS
            cd $MONTHS
-           #mkdir {1..30}
+           #mkdir {01..30}
            for DAYS in {01..30}; do
            echo -n $DAYS/
            mkdir $DAYS
@@ -163,7 +163,7 @@ October) echo $MONTHS
          sleep 2
          mkdir $MONTHS
          cd $MONTHS
-         #mkdir {1..31}
+         #mkdir {01..31}
          for DAYS in {01..31}; do
          echo -n $DAYS/
          mkdir $DAYS
@@ -177,7 +177,7 @@ November) echo $MONTHS
           sleep 2
           mkdir $MONTHS
           cd $MONTHS
-          #mkdir {1..30}
+          #mkdir {01..30}
           for DAYS in {01..30}; do
           echo -n $DAYS/
           mkdir $DAYS
@@ -191,7 +191,7 @@ December) echo $MONTHS
           sleep 2
           mkdir $MONTHS
           cd $MONTHS
-          #mkdir {1..31}
+          #mkdir {01..31}
           for DAYS in {01..31}; do
           echo -n $DAYS/
           mkdir $DAYS
